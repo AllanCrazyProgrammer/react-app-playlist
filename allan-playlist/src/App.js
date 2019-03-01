@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Media from "./componentes/media"
+import Playlist from "./componentes/playlist"
+import data from "./api.json"
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Media title='Porque aprender React 2019?' image='./images/playa.jpg' />
+      <Playlist data={data} />
     );
   }
 }

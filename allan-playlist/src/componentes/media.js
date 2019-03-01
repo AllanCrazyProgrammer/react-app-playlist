@@ -16,7 +16,7 @@ class Media extends React.Component{
     }
 
     PropTypes = {
-        image: PropTypes.string,
+        cover: PropTypes.string,
         title: PropTypes.string.isRequired,
         author: PropTypes.string,
 
@@ -40,13 +40,13 @@ class Media extends React.Component{
             <div className="Media" onClick={this.handleClick}>
                 <div>
                     <img
-                        src={this.props.image}
+                        src={this.props.cover}
                         alt=""
                         width={260}
                         height={160}
                     />
                     <h3>{this.props.title}</h3>
-                    <p>{this.state.author}</p>
+                    <p>{this.props.author}</p>
                 </div>
             </div>
         )
